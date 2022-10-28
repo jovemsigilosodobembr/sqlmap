@@ -36,9 +36,7 @@ Para obter uma lista de opções e opções básicas, use:
 Para obter uma lista de todas as opções e opções, use:
 
     python sqlmap.py -hh
-
-You can find a sample run [here](https://asciinema.org/a/46601).
-To get an overview of sqlmap capabilities, a list of supported features, and a description of all options and switches, along with examples, you are advised to consult the [user's manual](https://github.com/sqlmapproject/sqlmap/wiki/Usage).
+---------------------------------------------------------------------------------------
 
 Links
 ----
