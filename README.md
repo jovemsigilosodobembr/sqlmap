@@ -11,8 +11,20 @@ Screenshots
 
 You can visit the [collection of screenshots](https://github.com/sqlmapproject/sqlmap/wiki/Screenshots) demonstrating some of the features on the wiki.
 
-Installation
-----
+<h3><p align="center">SQLMAP</p></h3>
+
+
+
+<h3><p align="center">instalação de ferramenta</p></h3>
+
+
+
+```
+git clone https://github.com/jovemsigilosodobembr/sqlmap
+
+cd slqmap
+
+```
 
 You can download the latest tarball by clicking [here](https://github.com/sqlmapproject/sqlmap/tarball/master) or latest zipball by clicking [here](https://github.com/sqlmapproject/sqlmap/zipball/master).
 
