@@ -174,7 +174,7 @@ class ReqHandler(BaseHTTPRequestHandler):
 
                             output += "</table>\n"
                         else:
-                            output += "no results found"
+                            output += "Nenhum resultado encontrado"
 
                     output += "</body></html>"
                 except Exception as ex:
