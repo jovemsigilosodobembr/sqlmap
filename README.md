@@ -26,22 +26,14 @@ cd slqmap
 
 ```
 
-You can download the latest tarball by clicking [here](https://github.com/sqlmapproject/sqlmap/tarball/master) or latest zipball by clicking [here](https://github.com/sqlmapproject/sqlmap/zipball/master).
-
-Preferably, you can download sqlmap by cloning the [Git](https://github.com/sqlmapproject/sqlmap) repository:
-
-    git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
-
-sqlmap works out of the box with [Python](https://www.python.org/download/) version **2.6**, **2.7** and **3.x** on any platform.
-
 Usage
 ----
 
-To get a list of basic options and switches use:
+Para obter uma lista de opções e opções básicas, use:
 
-    python sqlmap.py -h
+    python3 sqlmap.py -h
 
-To get a list of all options and switches use:
+Para obter uma lista de todas as opções e opções, use:
 
     python sqlmap.py -hh
 
