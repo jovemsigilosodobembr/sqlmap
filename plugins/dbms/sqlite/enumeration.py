@@ -11,59 +11,59 @@ from plugins.generic.enumeration import Enumeration as GenericEnumeration
 
 class Enumeration(GenericEnumeration):
     def getCurrentUser(self):
-        warnMsg = "on SQLite it is not possible to enumerate the current user"
+        warnMsg = "no SQLite não é possível enumerar o usuário atual"
         logger.warning(warnMsg)
 
     def getCurrentDb(self):
-        warnMsg = "on SQLite it is not possible to get name of the current database"
+        warnMsg = "no SQLite não é possível obter o nome do banco de dados atual"
         logger.warning(warnMsg)
 
     def isDba(self, user=None):
-        warnMsg = "on SQLite the current user has all privileges"
+        warnMsg = "no SQLite o usuário atual tem todos os privilégios"
         logger.warning(warnMsg)
 
         return True
 
     def getUsers(self):
-        warnMsg = "on SQLite it is not possible to enumerate the users"
+        warnMsg = "no SQLite não é possível enumerar os usuários"
         logger.warning(warnMsg)
 
         return []
 
     def getPasswordHashes(self):
-        warnMsg = "on SQLite it is not possible to enumerate the user password hashes"
+        warnMsg = "no SQLite não é possível enumerar os hashes de senha do usuário"
         logger.warning(warnMsg)
 
         return {}
 
     def getPrivileges(self, *args, **kwargs):
-        warnMsg = "on SQLite it is not possible to enumerate the user privileges"
+        warnMsg = "no SQLite não é possível enumerar os privilégios do usuário"
         logger.warning(warnMsg)
 
         return {}
 
     def getDbs(self):
-        warnMsg = "on SQLite it is not possible to enumerate databases (use only '--tables')"
+        warnMsg = "no SQLite não é possível enumerar bancos de dados (usarem apenas '--tables')"
         logger.warning(warnMsg)
 
         return []
 
     def searchDb(self):
-        warnMsg = "on SQLite it is not possible to search databases"
+        warnMsg = "no SQLite não é possível pesquisar bancos de dados"
         logger.warning(warnMsg)
 
         return []
 
     def searchColumn(self):
-        errMsg = "on SQLite it is not possible to search columns"
+        errMsg = "no SQLite não é possível pesquisar colunas"
         raise SqlmapUnsupportedFeatureException(errMsg)
 
     def getHostname(self):
-        warnMsg = "on SQLite it is not possible to enumerate the hostname"
+        warnMsg = "no SQLite não é possível enumerar o hostname"
         logger.warning(warnMsg)
 
     def getStatements(self):
-        warnMsg = "on SQLite it is not possible to enumerate the SQL statements"
+        warnMsg = "no SQLite não é possível enumerar as instruções SQL"
         logger.warning(warnMsg)
 
         return []
