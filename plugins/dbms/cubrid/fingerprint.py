@@ -65,7 +65,7 @@ class Fingerprint(GenericFingerprint):
 
             return True
 
-        infoMsg = "testing %s" % DBMS.CUBRID
+        infoMsg = "testando %s" % DBMS.CUBRID
         logger.info(infoMsg)
 
         result = inject.checkBooleanExpression("{} SUBSETEQ (CAST ({} AS SET))")
