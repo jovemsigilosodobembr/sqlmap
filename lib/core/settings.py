@@ -586,7 +586,7 @@ IGNORE_SPACE_AFFECTED_KEYWORDS = ("CAST", "COUNT", "EXTRACT", "GROUP_CONCAT", "M
 # Keywords expected to be in UPPERCASE in getValue()
 GET_VALUE_UPPERCASE_KEYWORDS = ("SELECT", "FROM", "WHERE", "DISTINCT", "COUNT")
 
-LEGAL_DISCLAIMER = "Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program"
+LEGAL_DISCLAIMER = "O uso de sqlmap para atacar alvos sem consentimento mútuo prévio é ilegal. É responsabilidade do usuário final obedecer a todas as leis locais, estaduais e federais aplicáveis. Os desenvolvedores não assumem nenhuma responsabilidade e não são responsáveis ​​por qualquer uso indevido ou dano causado por este programa"
 
 # After this number of misses reflective removal mechanism is turned off (for speed up reasons)
 REFLECTIVE_MISS_THRESHOLD = 20
