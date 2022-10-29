@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 
 """
-Copyright (c) 2006-2022 sqlmap developers (https://sqlmap.org/)
-See the file 'LICENSE' for copying permission
+Modificado 2
 """
 
 import functools
@@ -133,7 +132,7 @@ def _setRequestParams():
 
         if kb.processUserMarks is None and kb.customInjectionMark in conf.data:
             message = "custom injection marker ('%s') found in %s " % (kb.customInjectionMark, conf.method)
-            message += "body. Do you want to process it? [Y/n/q] "
+            message += "body. Você quer processá-lo? [Y/n/q] "
             choice = readInput(message, default='Y').upper()
 
             if choice == 'Q':
@@ -169,7 +168,7 @@ def _setRequestParams():
 
         elif re.search(JSON_LIKE_RECOGNITION_REGEX, conf.data):
             message = "JSON-like data found in %s body. " % conf.method
-            message += "Do you want to process it? [Y/n/q] "
+            message += "Você quer processá-lo? [Y/n/q] "
             choice = readInput(message, default='Y').upper()
 
             if choice == 'Q':
@@ -188,7 +187,7 @@ def _setRequestParams():
 
         elif re.search(ARRAY_LIKE_RECOGNITION_REGEX, conf.data):
             message = "Array-like data found in %s body. " % conf.method
-            message += "Do you want to process it? [Y/n/q] "
+            message += "Você quer processá-lo? [Y/n/q] "
             choice = readInput(message, default='Y').upper()
 
             if choice == 'Q':
@@ -201,7 +200,7 @@ def _setRequestParams():
 
         elif re.search(XML_RECOGNITION_REGEX, conf.data):
             message = "SOAP/XML data found in %s body. " % conf.method
-            message += "Do you want to process it? [Y/n/q] "
+            message += "Você quer processá-lo? [Y/n/q] "
             choice = readInput(message, default='Y').upper()
 
             if choice == 'Q':
@@ -215,7 +214,7 @@ def _setRequestParams():
 
         elif re.search(MULTIPART_RECOGNITION_REGEX, conf.data):
             message = "Multipart-like data found in %s body. " % conf.method
-            message += "Do you want to process it? [Y/n/q] "
+            message += "Você quer processá-lo? [Y/n/q] "
             choice = readInput(message, default='Y').upper()
 
             if choice == 'Q':
@@ -246,14 +245,14 @@ def _setRequestParams():
     kb.processUserMarks = True if (kb.postHint and kb.customInjectionMark in (conf.data or "")) else kb.processUserMarks
 
     if re.search(URI_INJECTABLE_REGEX, conf.url, re.I) and not any(place in conf.parameters for place in (PLACE.GET, PLACE.POST)) and not kb.postHint and kb.customInjectionMark not in (conf.data or "") and conf.url.startswith("http"):
-        warnMsg = "you've provided target URL without any GET "
+        warnMsg = "você forneceu o URL de destino sem nenhum GET "
         warnMsg += "parameters (e.g. 'http://www.site.com/article.php?id=1') "
         warnMsg += "and without providing any POST parameters "
         warnMsg += "through option '--data'"
         logger.warning(warnMsg)
 
-        message = "do you want to try URI injections "
-        message += "in the target URL itself? [Y/n/q] "
+        message = "você quer tentar injeções de URI "
+        message += "no próprio URL de destino? [Y/n/q] "
         choice = readInput(message, default='Y').upper()
 
         if choice == 'Q':
